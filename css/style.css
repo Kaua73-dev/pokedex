@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at top, #0a0f23, #03040c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00eaff, #007bff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 8px #00c8ff88;
+}
+
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 260px;
+    border-radius: 10px;
+    border: 2px solid #00eaff55;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    text-shadow: 0 0 5px #00eaff55;
+}
+
+.search-box input::placeholder {
+    color: #9ad9ff99;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #007bff, #00eaff);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #009dff88;
+    transition: 0.2s ease-in-out;
+}
+
+.search-box button:hover {
+    box-shadow: 0 0 20px #00eaffcc;
+    transform: scale(1.05);
+}
+
+
+.card {
+    width: 330px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 2px solid #00eaff44;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #00bfff33;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.card img {
+    width: 170px;
+    filter: drop-shadow(0 0 15px #00eaffaa);
+    margin-bottom: 15px;
+}
+
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-shadow: 0 0 10px #00cfff77;
+    text-transform: capitalize;
+}
+
+.card p {
+    margin: 6px 0;
+    font-size: 18px;
+    color: #d8f7ff;
+    text-shadow: 0 0 5px #009dff55;
+}
