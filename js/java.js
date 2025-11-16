@@ -43,6 +43,7 @@ text += data.abilities[i].ability.name + ' ';
 }
 
 // add on html
+imgPoke.style.visibility = "visible";
 imgPoke.src = data.sprites.front_default
 namePoke.innerText = `Name: ${data.name}`
 typePoke.innerText = `Type: ${data.types[0].type.name}`
